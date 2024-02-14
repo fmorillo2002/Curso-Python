@@ -1,0 +1,45 @@
+#Práctica Fernando Morillo
+
+#Variable de texto
+nombre = "Mi nombre es Fernando Morillo"
+print(nombre)
+
+#Vector con mis números de buena suerte
+num_suerte=[8,13,25,69]
+print(num_suerte)
+
+#Diccionario de información de la ultima serie que vi (Aprovechando el periodo de violencia que se vive)
+mi_diccionario = {"Título":"El cartel de los sapos", "Género":"Narco novela", "Publicación":"2008"}
+print(mi_diccionario)
+
+#Vector de enteros que se repita 3 veces
+hermanos = [2]*3
+print(hermanos)
+
+# Vector de float que se repita 4 veces
+peso_kilos = [73.2]*4
+print(peso_kilos)
+
+# Cadenas
+
+cadena_simple = "Soy Fernando"
+cadena_doble = ["Estoy en la tesis", "Me da miedo la tesis"]
+print(cadena_doble)
+
+
+#Data frame 
+import pandas as pd
+
+datos_petroleras = {
+    'Petroleras': ['Andes', 'PetroEcuador', 'SLB', 'Petrooriental'],
+    'Año2020 (ventasmillones)': [100, 700, 80, 50],
+    'Año2021 (ventasmillones)': [110, 650, 80, 52],
+    'Año2022 (ventasmillones)': [120, 680, 80, 80]
+}
+
+df_petroleras = pd.DataFrame(datos_petroleras)
+print(df_petroleras)
+
+#Importar archivos
+imp_sri=  pd.read_excel("ventas_SRI.xlsx")
+print(imp_sri)
